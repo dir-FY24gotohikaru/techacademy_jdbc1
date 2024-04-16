@@ -15,7 +15,7 @@ public class DatabaseManager {
         con = DriverManager.getConnection(
             "jdbc:mysql://localhost/world?useSSL=false&allowPublicKeyRetrieval=true",
             "root",
-            "password"
+            "0308_Toshi_HIKARU_G"
         );
         // "password"の部分は，ご自身でrootユーザーに設定したものを記載してください。
 
