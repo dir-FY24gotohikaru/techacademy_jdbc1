@@ -11,12 +11,13 @@ import dbSample.entity.Country;
 public class DbConnectSample06 {
 
     public static void main(String[] args) {
+        String name = keyIn();
      // Countryクラスにアクセスするため、CountryDAOをインスタンス化
         CountryDAO dao = new CountryDAO();
 
         // 検索用キーワードを入力
         System.out.print("検索キーワードを入力してください > ");
-        String name = keyIn();
+        
 
         // 入力された値を引数に指定し、検索処理を実行し、Listオブジェクトを取得
         List<Country> list = dao.getCountryFromName(name);
@@ -25,6 +26,7 @@ public class DbConnectSample06 {
         for(Country item : list){
             System.out.println(item.getName());
             System.out.println(item.getPopulation());
+            
         }
     }
 
